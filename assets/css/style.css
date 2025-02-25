@@ -40,11 +40,11 @@ nav {
 
 nav .menu {
     display: flex;
+    justify-content: space-around;
 }
 
 nav .menu li {
     list-style: none;
-    padding-left: 155px;
 }
 
 nav .menu li a {
