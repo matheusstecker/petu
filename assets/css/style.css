@@ -2,8 +2,6 @@
     font-family: "Montserrat", serif;
 }
 
-
-
 body {
     position: relative;
     background-color: #039AA6;
@@ -121,8 +119,160 @@ nav .menu li a:hover {
 
 /* END SECTION 2*/
 
+/* START SECTION 3 */
+.section-three {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-three .left {
+    background: rgb(42, 213, 113);
+    background: linear-gradient(90deg, rgba(42, 213, 113, 1) 0%, rgba(3, 154, 166, 1) 46%, rgba(3, 154, 166, 1) 62%);
+    padding: 60px 160px 60px 160px;
+    border-bottom: 5px solid #fff;
+    border-radius: 0px 30px 30px 0px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+.section-three .left h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section-three .right {
+    background-color: #2AD571;
+    border-radius: 30px;
+    margin-right: 160px;
+    padding: 0px 60px;
+    height: 200px;
+}
+
+.section-three .right img {
+    width: 380px;
+    position: relative;
+    bottom: 30px;
+}
+
+/* END SECTION 3 */
+
+/* START SECTION 4 */
+.section-four {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-four .left {
+    background-color: #2AD571;
+    border-radius: 30px;
+    margin-left: 160px;
+    padding: 0px 60px;
+    height: 200px;
+}
+
+.section-four .left img {
+    width: 380px;
+    position: relative;
+    bottom: 30px;
+}
+
+.section-four .right {
+    background: rgb(3, 154, 166);
+    background: linear-gradient(90deg, rgba(3, 154, 166, 1) 0%, rgba(3, 154, 166, 1) 51%, rgba(42, 213, 113, 1) 100%);
+    padding: 60px 230px 60px 70px;
+    border-bottom: 5px solid #fff;
+    border-radius: 30px 0px 0px 30px;
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+.section-four .right h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* END SECTION 4 */
+
+/* START SECTION 5 */
+.section-five {
+    display: flex;
+    padding: 60px 160px;
+    align-items: center;
+}
+
+.section-five .left img {
+    border-radius: 30px;
+}
+
+.section-five .right {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.section-five .right h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-five .right p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* END SECTION 5 */
+
+/* START SECTION 6 */
+.section-six {
+    background: rgb(3, 154, 166);
+    background: linear-gradient(90deg, rgba(3, 154, 166, 1) 0%, rgba(42, 213, 113, 1) 31%, rgba(42, 213, 113, 1) 71%, rgba(3, 154, 166, 1) 100%);
+    padding: 60px;
+    text-align: center;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.section-six img {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.section-six h3 {
+    font-size: 48px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.section-six .btn {
+    display: inline-block;
+    background-color: #039AA6;
+    padding: 10px 70px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 40px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.section-six .btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* END SECTION 6 */
+
 /* START FOOTER */
 footer {
+    margin-top: 40px;
     background: #039AA6;
     border-top: 5px solid #2AD571;
     border-bottom: 5px solid #2AD571;
