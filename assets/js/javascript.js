@@ -1,3 +1,51 @@
+const observerLeft = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showLeft')
+        } else {
+            entry.target.classList.remove('showLeft')
+        }
+    })
+})
+
+const elementsLeft = document.querySelectorAll('.left')
+
+elementsLeft.forEach((element) => observerLeft.observe(element))
+
+///////////////////////////////////////////////////////////
+
+const observerRight = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showRight')
+        } else {
+            entry.target.classList.remove('showRight')
+        }
+    })
+})
+
+const elementsRight = document.querySelectorAll('.right')
+
+elementsRight.forEach((element) => observerRight.observe(element))
+
+///////////////////////////////////////////////////////////
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showBlur')
+        } else {
+            entry.target.classList.remove('showBlur')
+        }
+    })
+})
+
+const elements = document.querySelectorAll('.hiddenBlur')
+
+elements.forEach((element) => myObserver.observe(element))
+
+///////////////////////////////////////////////////////////
+
 jQuery(function () {
 
     const nav = document.querySelector('nav')
@@ -8,19 +56,47 @@ jQuery(function () {
         var clickBtn = botaoMenu.contains(event.target)
         var verificaOpcoes = opcoesMenu.classList.contains('mostrar')
         var verificaBtn = botaoMenu.classList.contains('ativo')
-    
+
         if (!clickBtn || verificaOpcoes || verificaBtn) {
-    
+
             opcoesMenu.classList.remove('mostrar');
             botaoMenu.classList.remove('ativo');
-    
+
         } else {
-    
+
             opcoesMenu.classList.add('mostrar');
             botaoMenu.classList.add('ativo');
-            
+
         }
-    
+
+    });
+
+    jQuery(document).ready(function () {
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    });
+
+    jQuery(document).ready(function () {
+        jQuery(window).on("scroll", function () {
+            let scrollTop = jQuery(window).scrollTop(); // Posição do scroll
+
+            jQuery(".section-seven").each(function () {
+                let speed = 0.4; // Velocidade do efeito
+                let sectionTop = jQuery(this).offset().top;
+                let windowHeight = jQuery(window).height();
+
+                if (scrollTop + windowHeight > sectionTop) {
+                    let yPos = -(scrollTop - sectionTop) * speed;
+                    jQuery(this).css("background-position", `center ${yPos}px`);
+                }
+            });
+        });
     });
 
 
@@ -218,31 +294,31 @@ jQuery('#slide').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
     ]
-  });
+});

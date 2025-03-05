@@ -5,6 +5,7 @@
 body {
     position: relative;
     background-color: #039AA6;
+    overflow-x: hidden;
 }
 
 /* START HEADER */
@@ -232,6 +233,15 @@ nav .menu li a:hover {
 
 /* START SECTION 6 */
 .section-six {
+    position: relative;
+    background-color: #039AA6;
+    padding-bottom: 45px;
+    z-index: 2;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.section-six .content {
     background: rgb(3, 154, 166);
     background: linear-gradient(90deg, rgba(3, 154, 166, 1) 0%, rgba(42, 213, 113, 1) 31%, rgba(42, 213, 113, 1) 71%, rgba(3, 154, 166, 1) 100%);
     padding: 60px;
@@ -270,9 +280,52 @@ nav .menu li a:hover {
 
 /* END SECTION 6 */
 
+/* START SECTION 7 */
+.section-seven {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    margin-top: -40px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-seven .shadow {
+    height: 100vh;
+    width: 100%;
+    background-color: #00000054;
+    position: relative;
+    z-index: 2;
+}
+
+.section-seven .shadow .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.section-seven .shadow .content img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.section-seven .shadow .content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* END SECTION 7 */
+
 /* START FOOTER */
 footer {
-    margin-top: 40px;
     background: #039AA6;
     border-top: 5px solid #2AD571;
     border-bottom: 5px solid #2AD571;
@@ -374,10 +427,47 @@ footer .politics ul li a:hover {
 
 /* END FOOTER */
 
+/* ANIMATION */
+.hiddenLeft {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 0.6s;
+}
+
+.showLeft {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 0.6s;
+}
 
 
+.hiddenRight {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
 
+.showRight {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 1s;
+}
 
+.hiddenBlur {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+}
+
+.showBlur {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
 
 
 
@@ -394,6 +484,71 @@ footer .politics ul li a:hover {
 /* START RESPONSIVE  */
 @media screen and (max-width: 1459px) {}
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px) {
+    header img {
+        width: 110px;
+    }
+
+    nav .menu {
+        flex-direction: column;
+    }
+
+    nav .menu li a {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+
+    header button.menu-mb  span {
+        background-color: #fff;
+        position: absolute;
+        border-radius: 5px;
+        height: 3px;
+        transition: all 0.3s;
+    }
+
+    header button.menu-mb {
+        display: flex;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        right: 25px;
+        position: absolute;
+    }
+
+    header button.menu-mb span.um {
+        position: absolute;
+        width: 25px;
+    }
+
+    header button.menu-mb span.dois {
+        position: absolute;
+        width: 30px;
+        top: 10px;
+    }
+    nav {
+        padding: 30px 15px 0px 15px;
+    }
+
+    nav .mostrar {
+        height: 155px;
+    }
+
+    nav .mostrar #menu {
+        display: flex!important;
+    }
+    nav button.menu.ativo span.um {
+        width: 30px;
+        top: 8px;
+        right: -5px;
+        transform: rotate(45deg);
+    }
+    
+    nav button.menu.ativo span.dois {
+        width: 30px;
+        bottom: 9px;
+        right: -5px;
+        transform: rotate(-45deg);
+    }
+}
 
 /* END RESPONSIVE  */

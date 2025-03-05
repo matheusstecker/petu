@@ -68,6 +68,23 @@ function css_js_assets(){
         'all'
     );
 
+    wp_enqueue_style(
+        'lenis-css',
+        '//unpkg.com/lenis@1.1.18/dist/lenis.css',
+        array(),
+        '1.0',
+        'all'
+    );
+
+
+    wp_enqueue_script(
+        'lenis-js',
+        '//unpkg.com/lenis@1.1.18/dist/lenis.min.js',
+        array('jquery'),
+        '1.1.18',
+        true
+    );
+
     wp_enqueue_script(
         'slick-min',
         _URLTHEME . '/assets/js/slick.min.js',
