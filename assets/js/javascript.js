@@ -48,7 +48,7 @@ elements.forEach((element) => myObserver.observe(element))
 
 jQuery(function () {
 
-    const nav = document.querySelector('nav')
+    const nav = document.querySelector('.header-nav')
     const botaoMenu = nav.querySelector('#menu-mb')
     const opcoesMenu = nav.querySelector('#menu')
 
@@ -59,11 +59,13 @@ jQuery(function () {
 
         if (!clickBtn || verificaOpcoes || verificaBtn) {
 
+            nav.classList.remove('exibir');
             opcoesMenu.classList.remove('mostrar');
             botaoMenu.classList.remove('ativo');
 
         } else {
 
+            nav.classList.add('exibir');
             opcoesMenu.classList.add('mostrar');
             botaoMenu.classList.add('ativo');
 
@@ -292,33 +294,5 @@ jQuery('#slide').slick({
     autoplaySpeed: 1000,
     speed: 2200,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
+    slidesToScroll: 1
 });
