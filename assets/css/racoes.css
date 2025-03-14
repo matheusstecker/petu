@@ -1,0 +1,257 @@
+/* SECTION ONE FOOD */
+body {
+    background-color: #039aa6 !important;
+}
+
+.food-one {
+    background: rgb(3, 154, 166);
+    background: -moz-linear-gradient(180deg, rgba(3, 154, 166, 1) 0%, rgba(0, 95, 103, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(3, 154, 166, 1) 0%, rgba(0, 95, 103, 1) 100%);
+    background: linear-gradient(180deg, rgba(3, 154, 166, 1) 0%, rgba(0, 95, 103, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#039aa6", endColorstr="#005f67", GradientType=1);
+    padding: 0px 150px;
+    display: flex;
+    position: relative;
+    gap: 120px;
+    height: 100vh;
+    align-items: center;
+}
+
+.food-one .left .icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.food-one .left .icons .icon {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.food-one .left .icon .card {
+    background-color: #2AD571;
+    border-radius: 10px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-one .left .icon span {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.food-one .right .titles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.food-one .right .titles h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.food-one .right .titles p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 530px;
+}
+
+/* SECTION FOOD TWO */
+.food-two {
+    background: rgb(0, 95, 103);
+    background: -moz-linear-gradient(180deg, rgba(0, 95, 103, 1) 0%, rgba(42, 213, 113, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 95, 103, 1) 0%, rgba(42, 213, 113, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 95, 103, 1) 0%, rgba(42, 213, 113, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005f67", endColorstr="#2ad571", GradientType=1);
+    padding: 0px 150px;
+    display: flex;
+    position: relative;
+    gap: 120px;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.food-two .left .titles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.food-two .left .titles h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.food-two .left .titles p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 530px;
+}
+
+.food-two .right .icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.food-two .right .icons .icon {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.food-two .right .icon .card {
+    background-color: #2AD571;
+    border-radius: 10px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-two .right .icon span {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* SECTION THREE FOOD */
+.food-three {
+    background: rgb(42,213,113);
+    background: -moz-linear-gradient(180deg, rgba(42,213,113,1) 0%, rgba(3,154,166,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(42,213,113,1) 0%, rgba(3,154,166,1) 100%);
+    background: linear-gradient(180deg, rgba(42,213,113,1) 0%, rgba(3,154,166,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ad571",endColorstr="#039aa6",GradientType=1);
+    padding: 0px 150px;
+    display: flex;
+    position: relative;
+    gap: 120px;
+    height: 100vh;
+    align-items: center;
+}
+
+.food-three .left .icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.food-three .left .icons .icon {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.food-three .left .icon .card {
+    background-color: #2AD571;
+    border-radius: 10px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-three .left .icon span {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.food-three .right .titles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.food-three .right .titles h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.food-three .right .titles p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 530px;
+}
+
+/* COLLAPSABLE */
+
+.itens  .item * {
+    pointer-events: none;
+}
+
+.itens .item {
+    position: relative;
+    align-items: flex-start;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    z-index: 3;
+    transition: all 0.3s;
+}
+
+.itens .item img {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: all 0.3s;
+}
+
+.itens .item h3 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.itens .item p {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 10px;
+    line-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s;
+}
+
+.item.ativo img {
+    transform: rotate(180deg);
+}
+
+.itens .item.ativo p {
+    line-height: 1.2;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 10px;
+}

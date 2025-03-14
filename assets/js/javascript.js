@@ -1,3 +1,34 @@
+const divPai = document.querySelector('.itens')
+
+divPai.addEventListener('click', callbackClickCollapsible)
+
+function callbackClickCollapsible(evento) {
+    const elemento = evento.target
+
+    if (!elemento.matches('.item')) return false
+
+    desativarDivs()
+    ativarDiv(elemento)
+}
+
+function ativarDiv(div) {
+    if (!div) return false
+
+    const classe = 'ativo'
+    div.classList.add(classe)
+}
+
+function desativarDivs() {
+    const divItems = document.querySelectorAll('.itens .item')
+    const classe = 'ativo'
+
+    for (const div of divItems) {
+        div.classList.remove(classe)
+    }
+}
+
+///////////////////////////////////////////////////////////
+
 const observerLeft = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {

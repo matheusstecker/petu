@@ -61,6 +61,15 @@ function css_js_assets(){
     );
 
     wp_enqueue_style(
+        'racoes',
+        _URLTHEME . '/assets/css/racoes.css',
+        array(),
+        '1.0',
+        'all'
+    );
+
+
+    wp_enqueue_style(
         'style',
         _URLTHEME . '/assets/css/style.css',
         array(),
