@@ -4,7 +4,6 @@
 
 body {
     position: relative;
-    overflow-x: hidden;
 }
 
 body.page {
@@ -431,50 +430,6 @@ footer .politics ul li a:hover {
 
 /* END FOOTER */
 
-/* ANIMATION */
-.hiddenLeft {
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
-    transition: all 0.6s;
-}
-
-.showLeft {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
-    transition: all 0.6s;
-}
-
-
-.hiddenRight {
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateX(100%);
-    transition: all 1s;
-}
-
-.showRight {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
-    transition: all 1s;
-}
-
-.hiddenBlur {
-    opacity: 0;
-    filter: blur(15px);
-    transition: all 1s;
-}
-
-.showBlur {
-    opacity: 1;
-    filter: blur(0);
-    transition: all 1s;
-}
-
-/* END ANIMATION */
-
 /* CUSTOM WP */
 body.home {
     background-color: #039AA6;
@@ -485,32 +440,86 @@ body.home {
 /* START RESPONSIVE  */
 @media screen and (max-width: 1400px) {
     .section-three .left {
-        padding: 50px 100px 50px 160px; 
+        padding: 50px 100px 50px 160px;
     }
+
     .section-three .left h2 {
         font-size: 30px;
     }
+
     .section-four .right {
         padding: 50px 250px 50px 100px;
     }
+
     .section-four .left {
         margin-left: 60px;
     }
+
     .section-four .right h2 {
         font-size: 30px;
     }
+
     .btn-light {
         text-align: center;
     }
+
     .section-five {
         padding: 60px;
     }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* ANIMATION */
+    .hiddenLeft {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translateX(-100%);
+        transition: all 0.6s;
+    }
+
+    .showLeft {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+        transition: all 0.6s;
+    }
+
+
+    .hiddenRight {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .showRight {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+        transition: all 1s;
+    }
+
+    .hiddenBlur {
+        opacity: 0;
+        filter: blur(15px);
+        transition: all 1s;
+    }
+
+    .showBlur {
+        opacity: 1;
+        filter: blur(0);
+        transition: all 1s;
+    }
+
+    /* END ANIMATION */
 }
 
 @media screen and (max-width: 1000px) {
     header img {
         width: 110px;
     }
+
     nav .menu {
         flex-direction: column;
         opacity: 0;
@@ -577,7 +586,7 @@ body.home {
         display: flex !important;
     }
 
-    .header-nav  button.menu-mb.ativo span.um {
+    .header-nav button.menu-mb.ativo span.um {
         width: 30px;
         top: 9px;
         right: -5px;
@@ -592,8 +601,9 @@ body.home {
     }
 
     .section-one {
-        margin-top:-185px;
+        margin-top: -185px;
     }
+
     .section-two {
         padding: 10px 15px;
     }
@@ -621,10 +631,11 @@ body.home {
         align-items: unset;
         padding-top: 30px;
     }
-
+    
     .section-three .left {
         padding: 30px 15px 30px 30px;
         margin-right: 135px;
+        
     }
 
     .section-three .left h2 {
@@ -716,7 +727,7 @@ body.home {
 
     .section-seven {
         height: 70vh;
-        background-image: url('../img/bg-parallax-mobile.jpg')!important;
+        background-image: url('../img/bg-parallax-mobile.jpg') !important;
     }
 
     .section-seven .shadow {
@@ -736,32 +747,41 @@ body.home {
     .section-seven .shadow .content h3 {
         font-size: 20px;
     }
+
     footer .footer-holder {
         padding: 40px 15px;
     }
+
     footer .item {
         flex-wrap: wrap;
     }
+
     footer .item .itens {
         margin-bottom: 30px;
     }
+
     footer .item .itens:last-child {
         margin: 0 auto;
-    } 
+    }
+
     footer .item .itens:nth-child(4) {
         margin-right: 35px;
     }
+
     footer .item .itens h3 {
         font-size: 17px;
         margin-bottom: 10px;
     }
+
     footer .politics {
         margin-top: 50px;
     }
+
     footer .politics ul {
 
         flex-direction: column;
     }
+
     footer .politics ul li {
         padding-right: 50px;
         padding-bottom: 5px;
