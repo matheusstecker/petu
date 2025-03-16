@@ -255,3 +255,97 @@ body {
     visibility: visible;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    .food-one {
+        margin-top: -130px;
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 50px;
+        height: unset;
+    }
+    .food-one .left img {
+        width: 100%;
+    }
+    .food-one .left .icons {
+        margin-top: 10px;
+    }
+    .food-one .left .icons .card {
+        width: 62px;
+        height: 62px;
+    }
+    .food-one .left .icons .card img {
+        width: 40px;
+    } 
+    .food-one .left .card span {
+        font-size: 12px;
+    }
+    .food-one .right .titles h2 {
+        font-size: 18px;
+    }
+    .food-one .right .titles p {
+        font-size: 14px;
+    }
+    .itens .item h3 {
+        font-size: 14px;
+    }
+    .itens .item p {
+        font-size: 12px;
+    }
+    .food-two {
+        padding: 100px 15px 0 15px;
+        flex-direction: column-reverse;
+        gap: 50px;
+        height: unset;
+    }
+    .food-two .right img {
+        width: 100%;
+    }
+    .food-two .right .icons {
+        margin-top: 10px;
+    }
+    .food-two .right .icons .card {
+        width: 62px;
+        height: 62px;
+    }
+    .food-two .right .icons .card img {
+        width: 40px;
+    } 
+    .food-two .right .card span {
+        font-size: 12px;
+    }
+    .food-two .left .titles h2 {
+        font-size: 18px;
+    }
+    .food-two .left .titles p {
+        font-size: 14px;
+    }
+    .food-three {
+        padding: 100px 15px 100px 15px;
+        flex-direction: column;
+        gap: 50px;
+        height: unset;
+    }
+    .food-three .left img {
+        width: 100%;
+    }
+    .food-three .left .icons {
+        margin-top: 10px;
+    }
+    .food-three .left .icons .card {
+        width: 62px;
+        height: 62px;
+    }
+    .food-three .left .icons .card img {
+        width: 40px;
+    } 
+    .food-three .left .card span {
+        font-size: 12px;
+    }
+    .food-three .right .titles h2 {
+        font-size: 18px;
+    }
+    .food-three .right .titles p {
+        font-size: 14px;
+    }
+}

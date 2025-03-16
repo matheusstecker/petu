@@ -1,29 +1,25 @@
-const divPai = document.querySelector('.itens')
-
-divPai.addEventListener('click', callbackClickCollapsible)
+document.addEventListener('click', callbackClickCollapsible);
 
 function callbackClickCollapsible(evento) {
-    const elemento = evento.target
+    const elemento = evento.target;
 
-    if (!elemento.matches('.item')) return false
+    if (!elemento.matches('.item')) return;
 
-    desativarDivs()
-    ativarDiv(elemento)
+    desativarDivs();
+    ativarDiv(elemento);
 }
 
 function ativarDiv(div) {
-    if (!div) return false
+    if (!div) return;
 
-    const classe = 'ativo'
-    div.classList.add(classe)
+    div.classList.add('ativo');
 }
 
 function desativarDivs() {
-    const divItems = document.querySelectorAll('.itens .item')
-    const classe = 'ativo'
+    const divItems = document.querySelectorAll('.itens .item');
 
     for (const div of divItems) {
-        div.classList.remove(classe)
+        div.classList.remove('ativo');
     }
 }
 
