@@ -54,9 +54,8 @@ nav .menu li {
 nav .menu li a {
     display: inline-block;
     color: #fff;
-    /* font-size: 20px; */
     font-weight: 700;
-    font-size: clamp(1.3rem, 1vw, 2.6rem);
+    font-size: clamp(16px, 1vw, 20px);
     transition: transform 0.6s ease-in-out;
 }
 
@@ -446,7 +445,11 @@ body.home {
 /* START RESPONSIVE  */
 @media screen and (max-width: 1400px) {
     .section-three .left {
-        padding: 50px 100px 50px 160px;
+        padding: 30px 15px 30px 30px;
+        margin-right: 135px;
+        width: unset;
+        border: 5px solid #fff;
+        border-left: 1px solid transparent;
     }
 
     .section-three .left h2 {
@@ -637,12 +640,6 @@ body.home {
         align-items: unset;
         padding-top: 30px;
     }
-    
-    .section-three .left {
-        padding: 30px 15px 30px 30px;
-        margin-right: 135px;
-        width: unset;
-    }
 
     .section-three .left h2 {
         font-size: 20px;
@@ -687,6 +684,8 @@ body.home {
         margin-left: 135px;
         margin-top: 30px;
         width: unset;
+        border: 5px solid #fff;
+        border-right: 1px solid transparent;
     }
 
     .section-four .right h2 {

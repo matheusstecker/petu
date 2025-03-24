@@ -1,0 +1,84 @@
+.about {
+    position: relative;
+    margin: 60px 100px 70px 100px;
+}
+
+.about .titles {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about .titles h1 {
+    font-size: clamp(22px, 1vw, 30px);
+    color: #fff;
+}
+
+.about .titles p {
+    font-size: clamp(14px, 1vw, 18px);
+    color: #fff;
+}
+
+.about .cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.about .cards .card {
+    position: relative;
+    padding: 50px 20px;
+    border: 5px solid #2AD571;
+    border-radius: 30px;
+    max-width: 380px;
+    max-height: 315px;
+}
+
+.about .cards .card.first {
+    max-height: unset;
+}
+
+.about .cards .card .icon {
+    background-color: #2AD571;
+    border-radius: 20px;
+    position: absolute;
+    padding: 15px;
+    top: -70px;
+    width: 80px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.about .cards .card .icon img {
+    width: 50px;
+}
+
+.about .cards .card .content {
+    padding: 0px 20px;
+}
+
+.about .cards .card .content h4 {
+    color: #fff;
+    font-size: clamp(16px, 1vw, 18px);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about .cards .card .content p {
+    color: #fff;
+    font-size: clamp(14px, 1vw, 16px);
+}
+
+.about .cards .card .content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.about .cards .card .content ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: clamp(14px, 1vw, 16px);
+}

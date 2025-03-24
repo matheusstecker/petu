@@ -62,12 +62,35 @@ function css_js_assets(){
 
     wp_enqueue_style(
         'racoes',
-        _URLTHEME . '/assets/css/racoes.css',
+        _URLTHEME . '/assets/css/templates/template.racoes.css',
         array(),
         '1.0',
         'all'
     );
 
+    wp_enqueue_style(
+        'onde-comprar',
+        _URLTHEME . '/assets/css/templates/template.onde-comprar.css',
+        array(),
+        '1.0',
+        'all'
+    );
+
+    wp_enqueue_style(
+        'sobre-nos',
+        _URLTHEME . '/assets/css/templates/template.sobre-nos.css',
+        array(),
+        '1.0',
+        'all'
+    );
+
+    wp_enqueue_style(
+        'contato',
+        _URLTHEME . '/assets/css/templates/template.contato.css',
+        array(),
+        '1.0',
+        'all'
+    );
 
     wp_enqueue_style(
         'style',

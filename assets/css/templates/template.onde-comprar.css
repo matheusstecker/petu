@@ -1,0 +1,47 @@
+.where-buy {
+    position: relative;
+    margin: 60px 100px 100px 100px;
+}
+
+.where-buy .titles {
+    text-align: center;
+}
+
+.where-buy .titles h1 {
+    font-size: clamp(22px, 1vw, 30px);
+    color: #fff;
+}
+
+.where-buy .titles p {
+    font-size: clamp(14px, 1vw, 18px);
+    color: #fff;
+}
+
+.where-buy .stores {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+}
+
+.where-buy .stores .store {
+    flex: 20%;
+    text-align: center;
+}
+
+.where-buy .stores .store img {
+    width: 100%;
+    max-width: 180px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.where-buy .stores .store:hover img {
+    transform: scale(1.1);
+} 
