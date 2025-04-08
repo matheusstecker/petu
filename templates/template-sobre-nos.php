@@ -4,13 +4,18 @@
  * Template Name: Sobre Nós
  */
 get_header();
+
+// ACF ABOUT
+$title_about = get_field('title_about');
+$text_about = get_field('text_about');
+$link_header = get_field('link_header');
+
 ?>
 
 <section class="about">
     <div class="titles">
-        <h1>Bem-vindo à Pet.U!</h1>
-        <p>Nós somos apaixonados por pets e acreditamos que cada animal merece o melhor em cuidados e carinho.</p>
-        <p>A Pet.U foi criada com o objetivo de proporcionar uma experiência única para você e seu companheiro de quatro patas.</p>
+        <h1><?php echo $title_about; ?></h1>
+        <p><?php echo $text_about; ?></p>
     </div>
     <div class="cards">
         <div class="card">
@@ -51,7 +56,7 @@ get_header();
 
 <div class="section-six">
     <div class="content hiddenBlur showBlur">
-        <img src="http://localhost/petu.com.br/wp-content/themes/petu/assets/img/icon-pin.svg" alt="Icone Pin">
+        <img src="http:///petu.com.br/wp-content/themes/petu/assets/img/icon-pin.svg" alt="Icone Pin">
         <h3>Compre Pet.U online</h3>
         <a class="btn" href="">Clique Aqui</a>
     </div>
