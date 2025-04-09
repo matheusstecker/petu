@@ -39,9 +39,9 @@ add_action('admin_head', 'custom_admin_styles');
 
 function change_my_wp_login_image() {
 
-$cor_fundo = "#000";
+$cor_fundo = "#039AA6";
 
-$cor_principal = "#F26722";
+$cor_principal = "#2AD571";
 $cor_principal_texto = "#fff";
 
 
