@@ -17,5 +17,31 @@ get_header();
 </section>
 
 <?php
+
+if (get_field('exibir_nessa_pagina') == 'sim') {
+
+?>
+
+<div class="section-six">
+    <div class="content hiddenBlur showBlur">
+        <img src="<?php echo _URLTHEME; ?>/assets/img/icon-pin.svg" alt="Icone Pin">
+        <h3>Compre Pet.U online</h3>
+
+        <?php 
+        
+        if(!empty(get_field('link_da_pagina'))) {
+        
+        ?>
+        <a class="btn" href="<?php echo get_field('link_da_pagina'); ?>">Clique Aqui</a>
+        <?php 
+        
+        }
+        
+        ?>
+    </div>
+</div>
+
+<?php
+}
 get_footer();
 ?>
