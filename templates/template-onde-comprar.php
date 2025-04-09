@@ -4,7 +4,8 @@
  * Template Name: Onde Comprar
  */
 
-get_header()
+get_header();
+
 ?>
 
 <section class="where-buy">
@@ -13,41 +14,81 @@ get_header()
         <p>Veja onde encontrar nossos produtos Pet.U em lojas oficiais.</p>
     </div>
     <div class="store-online">
-    <h2>Compre agora online!</h2>
-        <div class="store">
-            <a href="https://www.fasdepet.com.br/racoes?fq=P__2__Marca%3apet.u" target="_blank">
-                <img src="<?php echo _URLTHEME; ?>/assets/img/fasdepet.png" alt="Logo Fãs de Pet">
-            </a>
-        </div>
+        <h2>Compre agora online!</h2>
+
+        <?php
+
+        foreach (get_field('loja_online') as $content_store_online) {
+
+        ?>
+            <div class="store">
+                <a href="<?php echo $content_store_online['link_loja']; ?>" target="_blank">
+                    <img src="<?php echo $content_store_online['logo_loja']; ?>" alt="Logo Fãs de Pet">
+                </a>
+            </div>
+        <?php
+
+        }
+
+        ?>
     </div>
     <div class="physical-store">
         <h2>Compre em lojas físicas parceiras!</h2>
-        <div class="store">
-            <div class="left">
-                <img src="<?php echo _URLTHEME ?>/assets/img/vet.jpg" alt="Imagem Loja Física">
+
+        <?php
+
+        foreach (get_field('loja_fisica') as $content_store_physical) {
+
+        ?>
+
+            <div class="store">
+                <div class="left">
+                    <img src="<?php echo $content_store_physical['imagem_loja']; ?>" alt="Imagem Loja Física">
+                </div>
+                <div class="right">
+                    <?php
+                    
+                    if (!empty($content_store_physical['nome_loja'])) {
+                    
+                    ?>
+                    <h3><?php echo $content_store_physical['nome_loja']; ?></h3>
+                    <?php
+                    }
+                    ?>
+                    <ul>
+                        <?php
+
+                        if (!empty($content_store_physical['endereco_loja'])) {
+
+                        ?>
+                            <li><a href="<?php echo $content_store_physical['link_endereco_loja']; ?>"><strong>Endereço:</strong> <?php echo $content_store_physical['endereco_loja']; ?></a></li>
+                        <?php 
+                        }
+                        
+                        if (!empty($content_store_physical['telefone_loja'])) {
+
+                        ?>
+                        <li><a href="tel:<?php echo $content_store_physical['telefone_loja']; ?>"><strong>Telefone:</strong> <?php echo $content_store_physical['telefone_loja']; ?></a></li>
+                        <?php 
+                        }
+
+                        if (!empty($content_store_physical['horario_funcionamento_loja'])) {
+                        ?>
+                        <li>
+                            <p><strong>Horário de funcionamento:</strong> <?php echo $content_store_physical['horario_funcionamento_loja']; ?></p>
+                        </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
             </div>
-            <div class="right">
-                <h3>Vet Popular</h3>
-                <ul>
-                    <li><a href=""><strong>Endereço:</strong> Avenida Guapira n° 887, Tucuruvi - São Paulo, SP</a></li>
-                    <li><a href=""><strong>Telefone:</strong> (11) 91234-5678</a></li>
-                    <li><p><strong>Horário de funcionamento:</strong> 09:00 às 18:00</p></li>
-                </ul>
-            </div>
-        </div>
-        <div class="store">
-            <div class="left">
-                <img src="<?php echo _URLTHEME ?>/assets/img/vet.jpg" alt="Imagem Loja Física">
-            </div>
-            <div class="right">
-                <h3>Vet Popular</h3>
-                <ul>
-                    <li><a href=""><strong>Endereço:</strong> Avenida Guapira n° 887, Tucuruvi - São Paulo, SP</a></li>
-                    <li><a href=""><strong>Telefone:</strong> (11) 91234-5678</a></li>
-                    <li><p><strong>Horário de funcionamento:</strong> 09:00 às 18:00</p></li>
-                </ul>
-            </div>
-        </div>
+
+        <?php
+
+        }
+
+        ?>
     </div>
 </section>
 

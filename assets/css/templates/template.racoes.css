@@ -3,7 +3,8 @@ body {
     background-color: #039aa6 !important;
 }
 
-.food-one {
+.food-one,
+.food-two {
     background: rgb(3, 154, 166);
     background: -moz-linear-gradient(180deg, rgba(3, 154, 166, 1) 0%, rgba(0, 95, 103, 1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(3, 154, 166, 1) 0%, rgba(0, 95, 103, 1) 100%);
@@ -17,158 +18,47 @@ body {
     align-items: center;
 }
 
-.food-one .left .img-product {
-    text-align: center;
-}
-
-.food-one .left .img-product img {
-    max-width: 250px;
-    width: 100%;
-}
-
-.food-one .left .icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-.food-one .left .icons .icon {
-    width: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.food-one .left .icon .card {
-    background-color: #2AD571;
-    border-radius: 10px;
-    width: 72px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.food-one .left .icon span {
-    color: #fff;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.food-one .right .titles {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.food-one .right .titles h2 {
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.food-one .right .titles p {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    max-width: 530px;
-}
-
-/* SECTION FOOD TWO */
 .food-two {
+    flex-direction: row-reverse;
+}
+
+.food-main .verde {    
     background: rgb(0, 95, 103);
     background: -moz-linear-gradient(180deg, rgba(0, 95, 103, 1) 0%, rgba(42, 213, 113, 1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(0, 95, 103, 1) 0%, rgba(42, 213, 113, 1) 100%);
     background: linear-gradient(180deg, rgba(0, 95, 103, 1) 0%, rgba(42, 213, 113, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005f67", endColorstr="#2ad571", GradientType=1);
-    padding: 0px 150px;
-    display: flex;
-    position: relative;
-    gap: 120px;
-    height: 100vh;
-    align-items: center;
 }
 
-
-.food-two .left .titles {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.food-two .left .titles h2 {
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.food-two .left .titles p {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    max-width: 530px;
-}
-
-.food-two .right .icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-.food-two .right .icons .icon {
-    width: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.food-two .right .icon .card {
-    background-color: #2AD571;
-    border-radius: 10px;
-    width: 72px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.food-two .right .icon span {
-    color: #fff;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-/* SECTION THREE FOOD */
-.food-three {
-    background: rgb(42,213,113);
+.food-main .verde-azul {
+    background: rgb(42, 213, 113);
     background: -moz-linear-gradient(180deg, rgba(42,213,113,1) 0%, rgba(3,154,166,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(42,213,113,1) 0%, rgba(3,154,166,1) 100%);
-    background: linear-gradient(180deg, rgba(42,213,113,1) 0%, rgba(3,154,166,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(42, 213, 113, 1) 0%, rgba(3, 154, 166, 1) 100%);
+    background: linear-gradient(180deg, rgba(42, 213, 113, 1) 0%, rgba(3, 154, 166, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ad571",endColorstr="#039aa6",GradientType=1);
-    padding: 0px 150px;
-    display: flex;
-    position: relative;
-    gap: 120px;
-    height: 100vh;
-    align-items: center;
 }
 
-.food-three .left .icons {
+.food-one .left .img-product,
+.food-two .left .img-product {
+    text-align: center;
+}
+
+.food-one .left .img-product img,
+.food-two .left .img-product img {
+    max-width: 250px;
+    width: 100%;
+}
+
+.food-one .left .icons,
+.food-two .left .icons {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-top: 45px;
 }
 
-.food-three .left .icons .icon {
+.food-one .left .icons .icon,
+.food-two .left .icons .icon {
     width: 90px;
     display: flex;
     flex-direction: column;
@@ -176,7 +66,8 @@ body {
     text-align: center;
 }
 
-.food-three .left .icon .card {
+.food-one .left .icon .card,
+.food-two .left .icon .card {
     background-color: #2AD571;
     border-radius: 10px;
     width: 72px;
@@ -186,13 +77,15 @@ body {
     justify-content: center;
 }
 
-.food-three .left .icon span {
+.food-one .left .icon span,
+.food-two .left .icon span {
     color: #fff;
     font-size: 14px;
     margin-top: 10px;
 }
 
-.food-three .right .titles {
+.food-one .right .titles,
+.food-two .right .titles {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -200,13 +93,15 @@ body {
     margin-bottom: 40px;
 }
 
-.food-three .right .titles h2 {
+.food-one .right .titles h2,
+.food-two .right .titles h2 {
     color: #fff;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.food-three .right .titles p {
+.food-one .right .titles p,
+.food-two .right .titles p {
     font-size: 18px;
     color: #fff;
     font-weight: 400;
