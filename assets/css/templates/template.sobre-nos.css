@@ -82,3 +82,21 @@
     color: #fff;
     font-size: clamp(14px, 1vw, 16px);
 }
+
+@media screen and (max-width: 1000px) {
+
+    .about {
+        margin: -130px 15px 40px 15px;
+    } 
+
+    .about .cards {
+        flex-direction: column;
+    }
+
+    .about .cards .card {
+        padding: 50px 10px;
+        margin-bottom: 50px;
+        max-height: unset;
+    }
+
+}

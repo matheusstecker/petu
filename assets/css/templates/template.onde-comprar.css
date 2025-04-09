@@ -17,7 +17,7 @@
     color: #fff;
 }
 
-.where-buy .stores {
+.where-buy .store-online {
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -29,19 +29,127 @@
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
     flex-wrap: wrap;
+    max-width: 360px;
+    margin: 30px auto;
 }
 
-.where-buy .stores .store {
+.where-buy .store-online .store {
     flex: 20%;
     text-align: center;
 }
 
-.where-buy .stores .store img {
+.where-buy .store-online h2 {
+    font-size: clamp(18px, 1vw, 26px);
+    margin-bottom: 15px;
+    color: #039AA6;
+}
+
+.where-buy .store-online .store img {
     width: 100%;
     max-width: 180px;
     transition: transform 0.5s ease-in-out;
 }
 
-.where-buy .stores .store:hover img {
+.where-buy .store-online .store:hover img {
     transform: scale(1.1);
-} 
+}
+
+.where-buy .physical-store {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 60px;
+}
+
+.where-buy .physical-store h2 {
+    font-size: clamp(18px, 1vw, 26px);
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.where-buy .physical-store .store {
+    display: flex;
+    position: relative;
+    margin: 15px auto;    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    max-height: 200px;
+}
+
+.where-buy .physical-store .left img {
+    max-width: 300px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-height: 200px;
+}
+
+.where-buy .physical-store .right {
+    background-color: #fff;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.where-buy .physical-store .right h3 {
+    font-size: clamp(18px, 1vw, 26px);
+    color: #039AA6;
+    margin-bottom: 10px;
+}
+
+.where-buy .physical-store .right ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.where-buy .physical-store .right ul li a {
+    color: #000;
+    transition: all .6s;
+    font-size: clamp(14px, 1vw, 18px);
+}
+
+.where-buy .physical-store .right ul li p {
+    font-size: clamp(14px, 1vw, 18px);
+}
+
+.where-buy .physical-store .right ul li a:hover {
+    color: #039AA6;
+}
+
+.where-buy .physical-store .right ul li strong {
+    color: #039AA6;
+}
+
+@media screen and (max-width: 1000px) {
+    .where-buy {
+        margin: -130px 15px 100px 15px;
+    }
+    .where-buy .store-online {
+        gap: 0;
+    }
+    .where-buy .physical-store {
+        margin-top: 40px;
+    }
+    .where-buy .physical-store .store {
+        flex-direction: column;
+        max-height: unset;
+    }
+    .where-buy .physical-store .left img {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 20px;
+    }
+    .where-buy .physical-store .right {
+        padding: 30px;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}

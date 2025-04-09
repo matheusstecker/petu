@@ -61,7 +61,6 @@ nav .menu li a {
 
 nav .menu li a:hover {
     transform: scale(1.1);
-    opacity: 0.8;
 }
 
 /* END NAVBAR */
@@ -118,7 +117,6 @@ nav .menu li a:hover {
 
 .btn-light:hover {
     transform: scale(1.1);
-    opacity: 0.8;
 }
 
 /* END SECTION 2*/
@@ -283,7 +281,6 @@ nav .menu li a:hover {
 
 .section-six .btn:hover {
     transform: scale(1.1);
-    opacity: 0.8;
 }
 
 /* END SECTION 6 */

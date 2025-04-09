@@ -60,3 +60,11 @@
 .contact .form .text-center {
     text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+
+    .contact {
+        margin: -130px 15px 100px 15px;
+    } 
+
+}
