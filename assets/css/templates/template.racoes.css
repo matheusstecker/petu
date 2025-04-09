@@ -17,6 +17,15 @@ body {
     align-items: center;
 }
 
+.food-one .left .img-product {
+    text-align: center;
+}
+
+.food-one .left .img-product img {
+    max-width: 250px;
+    width: 100%;
+}
+
 .food-one .left .icons {
     display: flex;
     gap: 10px;
@@ -233,12 +242,12 @@ body {
 .itens .item h3 {
     font-size: 16px;
     color: #fff;
+    margin-bottom: 15px;
 }
 
-.itens .item p {
+.itens .item p:nth-last-child(2) {
     font-size: 14px;
     color: #fff;
-    padding-top: 10px;
     line-height: 0;
     opacity: 0;
     visibility: hidden;
@@ -249,11 +258,41 @@ body {
     transform: rotate(180deg);
 }
 
-.itens .item.ativo p {
+.itens .item.ativo p:nth-last-child(2) {
     line-height: 1.2;
     opacity: 1;
     visibility: visible;
     padding-bottom: 10px;
+}
+
+.itens .item .table_component {
+    display: none;
+    transition: all 0.6s;
+}
+
+.itens .item.ativo .table_component {
+    display: inline-table;
+    overflow: auto;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.itens .item .table_component th {
+    border: 1px solid #2AD571;
+    background-color: #2AD571;
+    color: #fff;
+    padding: 2px;
+}
+
+.itens .item .table_component td {
+    border: 1px solid #2AD571;
+    background-color: #fff;
+    color: #2AD571;
+    padding: 2px;
 }
 
 @media screen and (max-width: 1000px) {
