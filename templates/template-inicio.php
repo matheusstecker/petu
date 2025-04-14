@@ -36,7 +36,7 @@ get_header();
             <h1>Nutrição de qualidade para seu pet, com o carinho que ele merece!</h1>
         </div>
         <div class="right hiddenRight">
-            <a href="" class="btn-light">Compre aqui!</a>
+            <a href="<?php echo get_field('link_da_pagina'); ?>" class="btn-light">Compre aqui!</a>
         </div>
     </div>
 </section>
