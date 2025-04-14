@@ -3,6 +3,10 @@ body {
     background-color: #039aa6 !important;
 }
 
+.food-main section:nth-child(3) .img-product img {
+    max-width: 1000px
+}
+
 .food-one,
 .food-two {
     background: rgb(3, 154, 166);
@@ -169,7 +173,7 @@ body {
     display: inline-table;
     overflow: auto;
     width: 100%;
-    table-layout: fixed;
+    table-layout: auto;
     border-collapse: collapse;
     border-spacing: 1px;
     text-align: center;

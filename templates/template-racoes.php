@@ -10,7 +10,6 @@ get_header();
 <section class="food-main">
 
 <?php
-$class = 'food-one';
 $fundo = ' azul';
 foreach (get_field('conteudo_de_produtos') as $content) {
 
@@ -18,6 +17,8 @@ if ($content['estilo_de_exibicao'] == 'img_dir') {
 
     $class='food-two';
 
+} else {
+    $class = 'food-one';
 }
 
 if ($content['cor_fundo'] == 'azul_verde') {
