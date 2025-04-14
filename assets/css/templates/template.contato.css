@@ -65,6 +65,9 @@
 
     .contact {
         margin: -130px 15px 100px 15px;
-    } 
+    }
+    .contact .form .wpcf7-submit {
+        width: 100%;
+    }
 
 }

@@ -437,6 +437,19 @@ body.home {
     background-color: #039AA6;
 }
 
+.container-single {
+    padding: 80px 15px 100px 15px;
+}
+
+.container-single h1,
+.container-single p {
+    color: #fff;
+}
+
+.container-single .text-center {
+    text-align: center;
+}
+
 /* END CUSTOM WP */
 /* START RESPONSIVE  */
 @media screen and (max-width: 1400px) {
