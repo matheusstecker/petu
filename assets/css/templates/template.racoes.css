@@ -81,6 +81,11 @@ body {
     justify-content: center;
 }
 
+.icon .card img {
+    width: 100%;
+    max-width: 50px;
+}
+
 .food-one .left .icon span,
 .food-two .left .icon span {
     color: #fff;
@@ -193,6 +198,8 @@ body {
     color: #2AD571;
     padding: 2px;
 }
+
+
 
 @media screen and (max-width: 1000px) {
     .food-one {
